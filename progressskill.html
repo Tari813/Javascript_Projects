@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Progress to Mastery</title>
+		<link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Alegreya:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="progressskill.css">
+	</head>
+	<body id="body">
+		<div class="logo-contain">
+			<h1 class="logo">Progress to Mastery</h1>
+		</div>
+		<section>
+			<p class="info">Studies show that it will take at least 10,000 hours to master a skill. However, to be decent at any given skill it will only take about 20 hours of deliberate practice. </p>
+			<h1 class="myskill" id="skill-display"></h1>
+		</section>
+		<section class='percentages'>
+			<span id="dpercent">0%</span><span id="decent-percent"> to Decent Skill Level. 1200 minute(s) to go.</span><br>
+			<span id="mpercent">0%</span><span id="master-percent"> to Master Skill Level. 600000 minute(s) to go.</span>
+			<!--<div id="decent-percent" class="decent"><span id="dpercent">0%</span> to Decent Skill Level. 1200 minute(s) to go.</div>
+			<div id="master-percent" class="mastery"><span id="mpercent">0%</span> to Master Skill Level. 600000 minute(s) to go.</div>-->
+		</section>
+		<form>
+			<p id="total-min"></p>
+			<input type="text" id="userInput"> <span class="minutes">minutes spent on skill.</span>
+			<input type="button" value="Calculate" onclick="compute()">
+		</form>
+		<div class="btn">
+			<button onclick="setSkill()">Set Skill</button>
+		</div>
+		<div id="storage"></div>
+		<footer>
+			Created by Tarrence Garrison Inc. &copy
+		</footer>
+		<script type="text/javascript" src="progressskill.js"></script>
+		
+	</body>
+</html>
